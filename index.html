@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>消除字母游戏</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <div id="d_01">
+        <div class="game_Home">
+            <!--游戏说明-->
+            <div id="d_02"></div>
+
+            <!--开始游戏-->
+            <div class="btn_start btn" onclick="gameStart()">
+                开始游戏
+            </div>
+
+            <!--推荐-->
+            <div class="btn_other btn">
+                推荐
+            </div>
+
+            <!--音乐-->
+            <div class="btn_mp3 btn" onclick="playMusic(this)">
+                音乐:关
+            </div>
+
+            <!--分数-->
+            <p id="score">0</p>
+            <canvas id="gameCanvas" width="724px" height="433px"></canvas>
+
+
+        </div>
+    </div>
+
+    <!--按键音乐播放器-->
+    <audio id="mp3" src="img/btnpressed.ogg"></audio>
+
+    <!--背景音乐播放器-->
+    <audio id="bgmp3" src="img/gamemusic.mp3" loop="loop"></audio>
+
+
+    <!--引入JS文件-->
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
